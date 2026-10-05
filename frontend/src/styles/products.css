@@ -1,0 +1,31 @@
+.product-card-container {
+  transition: transform 0.2s;
+}
+
+.product-card-container:hover {
+  transform: translateY(-4px);
+}
+
+.price-tag {
+  font-weight: 600;
+  font-size: 1.25rem;
+}
+
+.rating-stars {
+  display: flex;
+  align-items: center;
+}
+
+.wishlist-btn {
+  transition: color 0.2s;
+}
+
+.wishlist-btn:hover {
+  color: #dc004e;
+}
+
+.pagination-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 24px;
+}

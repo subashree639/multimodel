@@ -1,0 +1,44 @@
+{
+  "baseline": {
+    "K=5": {
+      "precision@K": 0.0,
+      "recall@K": 0.0,
+      "ndcg@K": 0.0,
+      "hit_rate@K": 0.0,
+      "map@K": 0.0
+    },
+    "K=10": {
+      "precision@K": 0.0,
+      "recall@K": 0.0,
+      "ndcg@K": 0.0,
+      "hit_rate@K": 0.0,
+      "map@K": 0.0
+    },
+    "context": {
+      "hit_rate@K=50": 0.2167,
+      "recall@K=50": 0.125,
+      "hit_rate@K=100": 0.3333,
+      "recall@K=100": 0.2083,
+      "random_hit_rate@K=50_approx": 0.1
+    }
+  },
+  "ltr": {
+    "K=5": {
+      "precision@K": 0.0,
+      "recall@K": 0.0,
+      "ndcg@K": 0.0,
+      "hit_rate@K": 0.0,
+      "map@K": 0.0
+    },
+    "K=10": {
+      "precision@K": 0.0033,
+      "recall@K": 0.0167,
+      "ndcg@K": 0.006,
+      "hit_rate@K": 0.0333,
+      "map@K": 0.0018
+    }
+  },
+  "users": 60,
+  "protocol": "per-user holdout 2 positives (rating>=4), seed=42, train-only fit+history",
+  "notes": "Sparse single-category catalogue (1000 appliances, 664 reviews, 150 review users). Random per-user holdout of 2 positives. Top-10 retrieval of exact held-out items is hard; model shows ~2x random signal at K=50. LTR marginally above baseline at K=10 (2/60 users)."
+}

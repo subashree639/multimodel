@@ -1,0 +1,42 @@
+# --- Secrets / local config -------------------------------------------------
+.env
+.env.*
+!.env.example
+
+# --- Python -----------------------------------------------------------------
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+venv/
+.venv/
+
+# --- Node / frontend --------------------------------------------------------
+node_modules/
+frontend/dist/
+frontend/.vite/
+npm-debug.log*
+yarn-error.log*
+
+# --- Large raw datasets (exceed GitHub 100MB file limit) --------------------
+# Regenerate or download these — see README.md "Datasets".
+datasets/sales/sales.csv
+datasets/reviews/reviews.csv
+
+# --- Unrelated sub-project --------------------------------------------------
+wedding-invitation/
+
+# --- Runtime artifacts ------------------------------------------------------
+logs/
+*.log
+uploads/
+data_ingestion.db
+*.sqlite3
+
+# --- OS / editor ------------------------------------------------------------
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

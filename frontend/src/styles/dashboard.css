@@ -1,0 +1,25 @@
+.dashboard-container {
+  padding: 24px;
+}
+
+.dashboard-card {
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s;
+}
+
+.dashboard-card:hover {
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+}
+
+.stats-grid {
+  display: grid;
+  gap: 16px;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.chart-container {
+  position: relative;
+  height: 300px;
+  width: 100%;
+}
